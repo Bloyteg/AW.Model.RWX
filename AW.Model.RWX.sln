@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bloyteg.AW.Model.RWX.Parser", "Bloyteg.AW.Model.RWX.Parser\Bloyteg.AW.Model.RWX.Parser.fsproj", "{12040BC0-C203-4770-B323-8972F123D4D4}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bloyteg.AW.Model.RWX.Parser", "Bloyteg.AW.Model.RWX.Parser\Bloyteg.AW.Model.RWX.Parser.fsproj", "{DE93B485-F368-45C1-8281-8849999813EC}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bloyteg.AW.Model.RWX.Parser.Test", "Bloyteg.AW.Model.RWX.Parser.Test\Bloyteg.AW.Model.RWX.Parser.Test.fsproj", "{F014985A-CA63-47DE-B6A9-CF33E10549B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloyteg.AW.Model.RWX.Data", "Bloyteg.AW.Model.RWX.Data\Bloyteg.AW.Model.RWX.Data.csproj", "{D0DE7E74-B546-4BD1-A4AC-F4DC4EB959AD}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bloyteg.AW.Model.RWX", "Bloyeg.AW.Model.RWX\Bloyteg.AW.Model.RWX.fsproj", "{FD1665A7-A5CB-4F8C-BE94-6B14C7ECAD4C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bloyteg.AW.Model.RWX", "Bloyteg.AW.Model.RWX\Bloyteg.AW.Model.RWX.fsproj", "{FD1665A7-A5CB-4F8C-BE94-6B14C7ECAD4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12040BC0-C203-4770-B323-8972F123D4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12040BC0-C203-4770-B323-8972F123D4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12040BC0-C203-4770-B323-8972F123D4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12040BC0-C203-4770-B323-8972F123D4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE93B485-F368-45C1-8281-8849999813EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE93B485-F368-45C1-8281-8849999813EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE93B485-F368-45C1-8281-8849999813EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE93B485-F368-45C1-8281-8849999813EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F014985A-CA63-47DE-B6A9-CF33E10549B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F014985A-CA63-47DE-B6A9-CF33E10549B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F014985A-CA63-47DE-B6A9-CF33E10549B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
