@@ -8,7 +8,7 @@
     <ProjectGuid>{12040bc0-c203-4770-b323-8972f123d4d4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Byte.RWX.Parser</RootNamespace>
-    <AssemblyName>MrByte.RWX.Parser</AssemblyName>
+    <AssemblyName>Bloyteg.AW.Model.RWX.Parser</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>Bloyteg.AW.Model.RWX.Parser</Name>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

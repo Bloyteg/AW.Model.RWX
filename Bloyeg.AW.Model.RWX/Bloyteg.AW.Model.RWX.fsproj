@@ -8,7 +8,7 @@
     <ProjectGuid>{fd1665a7-a5cb-4f8c-be94-6b14c7ecad4c}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Byte.RWX</RootNamespace>
-    <AssemblyName>MrByte.RWX</AssemblyName>
+    <AssemblyName>Bloyteg.AW.Model.RWX</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>Bloyteg.AW.Model.RWX</Name>
     <TargetFrameworkProfile />
