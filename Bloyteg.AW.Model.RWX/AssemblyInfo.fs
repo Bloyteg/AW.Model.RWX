@@ -2,7 +2,7 @@
 open System.Reflection
 open System.Runtime.InteropServices
 
-[<assembly: AssemblyTitle("MrByte.RWX")>]
+[<assembly: AssemblyTitle("Bloyteg.AW.Model.RWX")>]
 [<assembly: AssemblyCopyright("Copyright (c) 2014 Joshua R. Rodgers")>]
 [<assembly: AssemblyVersion("1.0.5")>]
 [<assembly: AssemblyFileVersion("1.0.5")>]
