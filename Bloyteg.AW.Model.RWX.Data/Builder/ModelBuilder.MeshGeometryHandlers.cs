@@ -46,7 +46,7 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
                                                    Indices = indices.ToList(),
                                                    MaterialId = _model.AddMaterial(_currentMaterial),
                                                    Tag = tag,
-                                                   Triangles = ProcessIndicesToTriangle(indices).ToList()
+                                                   Triangles = TessellatePolygon(indices).ToList()
                                                });
 
             if(_currentMaterial.MaterialMode == MaterialMode.Double)
@@ -56,7 +56,7 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
                     Indices = indices.Reverse().ToList(),
                     MaterialId = _model.AddMaterial(_currentMaterial),
                     Tag = tag,
-                    Triangles = ProcessIndicesToTriangle(indices.Reverse()).ToList()
+                    Triangles = TessellatePolygon(indices.Reverse()).ToList()
                 });
             }
         }
@@ -67,23 +67,19 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
             PrevalidateGeometry();
 
             var indicesAsArray = new[]
-                              {
-                                  index0,
-                                  index1,
-                                  index2,
-                                  index3
-                              };
+            {
+                index0,
+                index1,
+                index2,
+                index3
+            };
 
             _currentMeshGeometry.Faces.Add(new Face
             {
                 Indices = indicesAsArray,
                 MaterialId = _model.AddMaterial(_currentMaterial),
                 Tag = tag,
-                Triangles = new List<Triangle>
-                                {
-                                    new Triangle(indicesAsArray[0], indicesAsArray[1], indicesAsArray[2]),
-                                    new Triangle(indicesAsArray[0], indicesAsArray[2], indicesAsArray[3])
-                                }
+                Triangles = TessellatePolygon(indicesAsArray).ToList()
             });
 
             if (_currentMaterial.MaterialMode == MaterialMode.Double)
@@ -93,11 +89,7 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
                     Indices = indicesAsArray.Reverse().ToList(),
                     MaterialId = _model.AddMaterial(_currentMaterial),
                     Tag = tag,
-                    Triangles = new List<Triangle>
-                                {
-                                    new Triangle(indicesAsArray[2], indicesAsArray[1], indicesAsArray[0]),
-                                    new Triangle(indicesAsArray[3], indicesAsArray[2], indicesAsArray[0])
-                                }
+                    Triangles = TessellatePolygon(indicesAsArray.Reverse()).ToList()
                 });
             }
         }
@@ -159,7 +151,7 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
         /// Processes the indices to triangle.
         /// </summary>
         /// <param name="indices">The indices.</param>
-        private IEnumerable<Triangle> ProcessIndicesToTriangle(IEnumerable<int> indices)
+        private IEnumerable<Triangle> TessellatePolygon(IEnumerable<int> indices)
         {
             var triangulator = new Triangulator(_currentMeshGeometry.Vertices.Select(vertex => vertex.Position).ToList(), indices);
 
