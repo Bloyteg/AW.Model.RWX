@@ -9,6 +9,8 @@ if not "%PackageVersion%" == "" (
    set version=-Version %PackageVersion%
 )
 
+cmd /c %nuget% restore
+
 REM Build
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild AW.Model.RWX.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false
 
