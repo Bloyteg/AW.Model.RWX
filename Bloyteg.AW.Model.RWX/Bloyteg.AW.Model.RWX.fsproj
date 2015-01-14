@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bloyteg.AW.Math">
-      <HintPath>..\packages\Bloyteg.AW.Math.1.0.2\lib\net45\Bloyteg.AW.Math.dll</HintPath>
+      <HintPath>..\packages\Bloyteg.AW.Math.1.0.5\lib\net45\Bloyteg.AW.Math.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

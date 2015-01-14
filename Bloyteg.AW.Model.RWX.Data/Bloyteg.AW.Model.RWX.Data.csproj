@@ -34,8 +34,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bloyteg.AW.Math">
-      <HintPath>..\packages\Bloyteg.AW.Math.1.0.2\lib\net45\Bloyteg.AW.Math.dll</HintPath>
+    <Reference Include="Bloyteg.AW.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Bloyteg.AW.Math.1.0.5\lib\net45\Bloyteg.AW.Math.dll</HintPath>
     </Reference>
     <Reference Include="LibTessDotNet">
       <HintPath>..\packages\LibTessDotNet.1.0.1\lib\net20\LibTessDotNet.dll</HintPath>
