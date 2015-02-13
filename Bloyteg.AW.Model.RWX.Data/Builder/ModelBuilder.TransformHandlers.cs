@@ -15,7 +15,7 @@ using Bloyteg.AW.Math;
 
 namespace Bloyteg.AW.Model.RWX.Data.Builder
 {
-	public partial class ModelBuilder
+    public partial class ModelBuilder
     {
         public void SetIdentityTransform()
         {
@@ -41,5 +41,5 @@ namespace Bloyteg.AW.Model.RWX.Data.Builder
         {
             _currentTransform = transform;
         }
-	}
+    }
 }
